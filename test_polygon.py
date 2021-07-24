@@ -76,9 +76,9 @@ def test_polygon_sequence_constructor():
     This function tests the initializer function of polygon sequence
     """
     with pytest.raises(ValueError, match=r".*Number of edges/vertices should be equal to or greater than 3(Three)*"):
-        p5 = polygon_sequence.Polygon_sequence(2,10)
+        p5 = polygon_sequence.PolygonSequence(2,10)
 
-p6 = polygon_sequence.Polygon_sequence(6,10)
+p6 = polygon_sequence.PolygonSequence(6,10)
 def test_len_operator():
     """This function tests the len method
     """
